@@ -41,17 +41,17 @@ public class HelloWorld {
         // int takes in the value of variable String theNumberThree and assigns it value of o as an int in the first function. In the second function, int three is assigned with another int that has a value of three as a string.
         // this code block also returns an error stating that the string cannot be converted to an integer.
 
-        int x = 4;
-        x += 5;
-
-        int x = 3;
-        int y = 4;
-        y *= x;
-
-        int x = 10;
-        int y = 2;
-        x /= y;
-        y -= x;
+//        int x = 4;
+//        x += 5;
+//
+//        int x = 3;
+//        int y = 4;
+//        y *= x;
+//
+//        int x = 10;
+//        int y = 2;
+//        x /= y;
+//        y -= x;
 
 
 
