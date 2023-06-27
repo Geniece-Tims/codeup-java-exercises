@@ -1,9 +1,7 @@
-import java.security.PublicKey;
-
 public class Person {
     private String name;
 
-    public Person(String name) {
+    public Person() {
         this.name = name;
     }
 
@@ -19,7 +17,7 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person person = new Person("Geniece");
+        Person person = new Person();
         System.out.println("Name: " + person.getName());
         person.sayHello();
         person.setName("Geniece Tims");
