@@ -2,18 +2,22 @@ package shapes;
 
 public class ShapesTest {
     public static void main(String[] args) {
-        Rectangle box1 = new Rectangle(5, 4);
+        Measurable myShape;
+        Rectangle rectangle = new Rectangle(5, 4);
+        myShape = rectangle;
         System.out.println("Rectangle box1");
-        System.out.println("Perimeter: " + box1.getPerimeter());
-        System.out.println("Area: " + box1.getArea());
+//        System.out.println("Perimeter: " + myShape.getPerimeter());
+        System.out.println("Area: " + myShape.getArea());
 
-        Rectangle box2 = new Square(5);
+        Square square = new Square(5);
+        myShape = square;
         System.out.println("\nSquare box2");
-        System.out.println("Perimeter: " + box2.getPerimeter());
-        System.out.println("Area: " + box2.getArea());
+        System.out.println("Perimeter: " + myShape.getPerimeter());
+        System.out.println("Area: " + myShape.getArea());
     }
 }
-// How can you determine which getArea and getPerimeter methods are being called on each object?
-// by printing out the results to determine which getArea() and getPerimeter() is being called. Ex. if the area and perimeter values match the
-// function calculations specific to the Rectangle class, it means that the Rectangle class methods are being called. If the value matching the
-// calculations specific to the Square class, it means the overridden methods in Square are being called.
+// Why does the code fail to compile if you leave off the getPerimeter method in Rectangle?
+// because the Rectangle class extends the Quadrilateral abstract class, which in turn implements the Measurable interface. The Measurable interface defines the contract that any class implementing it must provide implementations for all its methods.
+
+// What happens if you try to call the getLength or getWidth methods of the myShape variable? Why?
+// If you try to call the getLength or getWidth methods of the myShape variable, it will result in a compilation error. This is because the myShape variable is declared with the type Measurable, which is an interface.
