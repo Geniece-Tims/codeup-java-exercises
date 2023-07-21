@@ -10,6 +10,7 @@ public class HighLow {
             return getInteger(min, max);
         } else {
             System.out.println("Thank you.");
+            return userNum;
         }
     }
     public static void playGame() {
